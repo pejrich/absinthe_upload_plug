@@ -116,7 +116,7 @@ defmodule AbsintheUploadPlugTest do
 
     assert params["variables"] == %{
              "input" => %{
-               "attachment" => ["1", "0"]
+               "attachment" => ["0", "1"]
              }
            }
 

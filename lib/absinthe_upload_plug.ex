@@ -33,7 +33,7 @@ defmodule AbsintheUploadPlug do
         {_, ""} ->
           update_in(acc, Enum.drop(new_var_path, -1), fn
             [nil | _] -> [file_name]
-            list when is_list(list) -> [file_name | list]
+            list when is_list(list) -> list ++ [file_name]
             _ -> []
           end)
 
